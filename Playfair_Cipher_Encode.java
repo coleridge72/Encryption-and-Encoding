@@ -2,6 +2,131 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class Playfair_Cipher_Encode {
+		public static String encipher(String inputText, String[][] array) { 
+			// encipher the text, 2 letters at a time 
+			// If the letters are in the same column, then they move one down from each other 
+			// If they are in the same row, then they move one to the right from each other 
+			// If they are in neither the same row nor the same column, then they move to the 
+			// letter in their own row that lies in the same column as the other letter!
+			String output = "";
+			int position11 = 0; 
+			int position12 = 0;         
+			int position21 = 0; 
+			int position22 = 0; 
+			int last = 2;   
+			char c1 = inputText.charAt(0); 
+			char c2 = inputText.charAt(0); 
+			for (int a = 1; a < inputText.length(); a++) { 
+				if (inputText.substring(a, a + 1).equalsIgnoreCase(" ") != true && inputText.substring(a + 1, a + 2).equalsIgnoreCase(" ") != true && a != last) { 
+					// find the position of the first letter in the array/square
+					for (int i = 0; i < 5; i++) { 
+						for (int j = 0; j < 5; j++) { 
+							if (inputText.substring(a, a + 1).equalsIgnoreCase(array[i][j]) == true) { 
+								position11 = i; 
+								position12 = j; 
+								c1 = inputText.charAt(a); 
+							}
+						} 
+					} 
+					// find the position of the second letter in the array/square
+					for (int k = 0; k < 5; k++) { 
+						for (int l = 0; l < 5; l++) { 
+							if (inputText.substring(a + 1, a + 2).equalsIgnoreCase(array[k][l]) == true) { 
+								position21 = k; 
+								position22 = l; 
+								c2 = inputText.charAt(a + 1); 
+							}
+						} 
+					} 
+					// are they in the same row? 
+					if (position11 == position21) { 
+						// is the first letter at the far right of the square/array? 
+						if (position12 != 4) { 
+							position12++; 
+							if (Character.isUpperCase(c1) == true) { 
+								// add the enciphered letter to the cipher text string 
+								output = output + array[position11][position12].toUpperCase();  
+					 		} else { 
+								output = output + array[position11][position12]; 
+					 		}
+						} else { 
+							position12 = 0; 
+							if (Character.isUpperCase(c1) == true) { 
+								output = output + array[position11][position12].toUpperCase();  
+					 		} else { 
+								output = output + array[position11][position12]; 
+					 		}
+						} 
+						// is the second letter at the far right of the square/array? 
+						if (position22 != 4) { 
+							position22++;
+							if (Character.isUpperCase(c2) == true) { 
+								output = output + array[position21][position22].toUpperCase(); 
+							} else { 
+								output = output + array[position21][position22]; 
+							} 
+						} else { 
+							position22 = 0; 
+							if (Character.isUpperCase(c2) == true) { 
+								output = output + array[position21][position22].toUpperCase(); 
+							} else { 
+								output = output + array[position21][position22]; 
+							} 
+						} 
+					// are they in the same column? 
+					} else if (position12 == position22) { 
+						// is the first letter at the bottom of the square/array? 
+						if (position11 != 0) { 
+							position11--; 
+							if (Character.isUpperCase(c1) == true) { 
+								output = output + array[position11][position12].toUpperCase(); 
+							} else { 
+								output = output + array[position11][position12];
+							}
+						} else { 
+							position11 = 4; 
+							if (Character.isUpperCase(c1) == true) { 
+								output = output + array[position11][position12].toUpperCase(); 
+							} else { 
+								output = output + array[position11][position12];
+							}
+						} 
+						// is the second letter at the bottom of the square/array? 
+						if (position21 != 0) { 
+							position21--; 
+							if (Character.isUpperCase(c2) == true) { 
+								output = output + array[position21][position22].toUpperCase(); 
+							} else { 
+								output = output + array[position21][position22]; 
+							} 
+						} else { 
+							position21 = 4; 
+							if (Character.isUpperCase(c2) == true) { 
+								output = output + array[position21][position22].toUpperCase(); 
+							} else { 
+								output = output + array[position21][position22]; 
+							}
+						} 
+					// the letters are in neither the same row nor the same column! 
+					} else { 
+						if (Character.isUpperCase(c1) == true) { 
+							output = output + array[position11][position22].toUpperCase(); 
+						} else { 
+							output = output + array[position11][position22]; 
+						}
+						if (Character.isUpperCase(c2) == true) { 
+							output = output + array[position21][position12].toUpperCase(); 
+						} else { 
+							output = output + array[position21][position12]; 
+						} 
+					}
+					last = a + 1; 
+				} else if (inputText.substring(a, a + 1).equalsIgnoreCase(" ") == true) { 
+					output = output + " "; 
+				}  
+			}
+			return output;
+		}
 		public static void main(String[] args) { 
 			String inputKeyword = ""; 
 			boolean valid = false; 
@@ -134,127 +259,8 @@ public class Playfair_Cipher_Encode {
 				place = inputText.indexOf(" ", place + 1); 
 			} 
 			String output = ""; 
-			int position11 = 0; 
-			int position12 = 0;         
-			int position21 = 0; 
-			int position22 = 0; 
-			int last = 2;   
-			char c1 = inputText.charAt(0); 
-			char c2 = inputText.charAt(0); 
-			// encipher the text, 2 letters at a time 
-			// If the letters are in the same column, then they move one down from each other 
-			// If they are in the same row, then they move one to the right from each other 
-			// If they are in neither the same row nor the same column, then they move to the 
-			// letter in their own row that lies in the same column as the other letter! 
-			for (int a = 1; a < inputText.length(); a++) { 
-				if (inputText.substring(a, a + 1).equalsIgnoreCase(" ") != true && inputText.substring(a + 1, a + 2).equalsIgnoreCase(" ") != true && a != last) { 
-					// find the position of the first letter in the array/square
-					for (int i = 0; i < 5; i++) { 
-						for (int j = 0; j < 5; j++) { 
-							if (inputText.substring(a, a + 1).equalsIgnoreCase(array[i][j]) == true) { 
-								position11 = i; 
-								position12 = j; 
-								c1 = inputText.charAt(a); 
-							}
-						} 
-					} 
-					// find the position of the second letter in the array/square
-					for (int k = 0; k < 5; k++) { 
-						for (int l = 0; l < 5; l++) { 
-							if (inputText.substring(a + 1, a + 2).equalsIgnoreCase(array[k][l]) == true) { 
-								position21 = k; 
-								position22 = l; 
-								c2 = inputText.charAt(a + 1); 
-							}
-						} 
-					} 
-					// are they in the same row? 
-					if (position11 == position21) { 
-						// is the first letter at the far right of the square/array? 
-						if (position12 != 4) { 
-							position12++; 
-							if (Character.isUpperCase(c1) == true) { 
-								// add the enciphered letter to the cipher text string 
-								output = output + array[position11][position12].toUpperCase();  
-					 		} else { 
-								output = output + array[position11][position12]; 
-					 		}
-						} else { 
-							position12 = 0; 
-							if (Character.isUpperCase(c1) == true) { 
-								output = output + array[position11][position12].toUpperCase();  
-					 		} else { 
-								output = output + array[position11][position12]; 
-					 		}
-						} 
-						// is the second letter at the far right of the square/array? 
-						if (position22 != 4) { 
-							position22++;
-							if (Character.isUpperCase(c2) == true) { 
-								output = output + array[position21][position22].toUpperCase(); 
-							} else { 
-								output = output + array[position21][position22]; 
-							} 
-						} else { 
-							position22 = 0; 
-							if (Character.isUpperCase(c2) == true) { 
-								output = output + array[position21][position22].toUpperCase(); 
-							} else { 
-								output = output + array[position21][position22]; 
-							} 
-						} 
-					// are they in the same column? 
-					} else if (position12 == position22) { 
-						// is the first letter at the bottom of the square/array? 
-						if (position11 != 0) { 
-							position11--; 
-							if (Character.isUpperCase(c1) == true) { 
-								output = output + array[position11][position12].toUpperCase(); 
-							} else { 
-								output = output + array[position11][position12];
-							}
-						} else { 
-							position11 = 4; 
-							if (Character.isUpperCase(c1) == true) { 
-								output = output + array[position11][position12].toUpperCase(); 
-							} else { 
-								output = output + array[position11][position12];
-							}
-						} 
-						// is the second letter at the bottom of the square/array? 
-						if (position21 != 0) { 
-							position21--; 
-							if (Character.isUpperCase(c2) == true) { 
-								output = output + array[position21][position22].toUpperCase(); 
-							} else { 
-								output = output + array[position21][position22]; 
-							} 
-						} else { 
-							position21 = 4; 
-							if (Character.isUpperCase(c2) == true) { 
-								output = output + array[position21][position22].toUpperCase(); 
-							} else { 
-								output = output + array[position21][position22]; 
-							}
-						} 
-					// the letters are in neither the same row nor the same column! 
-					} else { 
-						if (Character.isUpperCase(c1) == true) { 
-							output = output + array[position11][position22].toUpperCase(); 
-						} else { 
-							output = output + array[position11][position22]; 
-						}
-						if (Character.isUpperCase(c2) == true) { 
-							output = output + array[position21][position12].toUpperCase(); 
-						} else { 
-							output = output + array[position21][position12]; 
-						} 
-					}
-					last = a + 1; 
-				} else if (inputText.substring(a, a + 1).equalsIgnoreCase(" ") == true) { 
-					output = output + " "; 
-				} 
-			} 
+			// encipher the message  
+			output = encipher(inputText, array);
 			JOptionPane.showMessageDialog(null, output);
 		} 
 	} 

@@ -438,16 +438,16 @@ public class ADFGX_Encode {
 				valid = false;
 			} else if (inputText.matches(".*[0-9].*") == true) {
 				valid = false;
-				System.out.println("The key word cannot contain any numbers!");
+				System.out.println("The text cannot contain any numbers!");
 			} else if (inputText.matches("[a-zA-Z0-9 ]*") == false) {
 				valid = false;
-				System.out.println("The key word cannot contain any special characters!");
+				System.out.println("The text cannot contain any special characters!");
 			}
 		} 
 		inputText = inputText.replace('j', 'i'); 
 		String[][] array = new String[5][5]; 
 		String alphabet = "abcdefghiklmnopqrstuvwxyz"; 
-		// initialise the array 
+		// initialise the array of the Polybius square 
 		for (int i = 0; i < 5; i++) { 
 			for (int j = 0; j < 5; j++) { 
 				array[i][j] = "ex"; 

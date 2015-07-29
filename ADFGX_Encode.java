@@ -375,7 +375,7 @@ public class ADFGX_Encode {
 			// allow user to input their own random square 
 				boolean check = false; 
 				while (check == false) { 
-					input = JOptionPane.showInputDialog(null,"Please enter your array line by line from left to right"); 
+					input = JOptionPane.showInputDialog(null,"Please enter your polybius square line by line from left to right (as one string)"); 
 					input = input.toLowerCase(); 
 					if (input.length() == 25 && input.contains("a") == true && input.contains("b") == true && input.contains("c") == true && input.contains("d") == true && input.contains("e") == true && input.contains("f") == true && input.contains("g") == true && input.contains("h") == true && input.contains("i") == true && input.contains("k") == true && input.contains("l") == true && input.contains("m") == true && input.contains("n") == true && input.contains("o") == true && input.contains("p") == true && input.contains("q") == true && input.contains("r") == true && input.contains("s") == true && input.contains("t") == true && input.contains("u") == true && input.contains("v") == true && input.contains("w") == true && input.contains("x") == true && input.contains("y") == true && input.contains("z") == true) { 
 						int x = 0; 

@@ -3,347 +3,397 @@ import javax.swing.JOptionPane;
 import java.util.*; 
 
 public class ADFGX_Decode { 
+	public static String order(String inputKeyword, String keyword) { 
+		// alphabetically order the key word 
+		if (inputKeyword.contains("a") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("a", track) != -1) { 
+					keyword = keyword + "a"; 
+					track = inputKeyword.indexOf("a", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("b") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("b", track) != -1) { 
+					keyword = keyword + "b"; 
+					track = inputKeyword.indexOf("b", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("c") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("c", track) != -1) { 
+					keyword = keyword + "c"; 
+					track = inputKeyword.indexOf("c", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("d") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("d", track) != -1) { 
+					keyword = keyword + "d"; 
+					track = inputKeyword.indexOf("d", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("e") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("e", track) != -1) { 
+					keyword = keyword + "e"; 
+					track = inputKeyword.indexOf("e", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("f") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("f", track) != -1) { 
+					keyword = keyword + "f"; 
+					track = inputKeyword.indexOf("f", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("g") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("g", track) != -1) { 
+					keyword = keyword + "g"; 
+					track = inputKeyword.indexOf("g", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("h") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("h", track) != -1) { 
+					keyword = keyword + "h"; 
+					track = inputKeyword.indexOf("h", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("i") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("i", track) != -1) { 
+					keyword = keyword + "i"; 
+					track = inputKeyword.indexOf("i", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("j") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("j", track) != -1) { 
+					keyword = keyword + "j"; 
+					track = inputKeyword.indexOf("j", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("k") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("k", track) != -1) { 
+					keyword = keyword + "k"; ; 
+					track = inputKeyword.indexOf("k", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("l") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("l", track) != -1) { 
+					keyword = keyword + "l"; 
+					track = inputKeyword.indexOf("l", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("m") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("m", track) != -1) { 
+					keyword = keyword + "m"; 
+					track = inputKeyword.indexOf("m", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("n") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("n", track) != -1) { 
+					keyword = keyword + "n"; 
+					track = inputKeyword.indexOf("n", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("o") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("o", track) != -1) { 
+					keyword = keyword + "o"; 
+					track = inputKeyword.indexOf("o", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("p") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("p", track) != -1) { 
+					keyword = keyword + "p"; 
+					track = inputKeyword.indexOf("p", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("q") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("q", track) != -1) { 
+					keyword = keyword + "q"; 
+					track = inputKeyword.indexOf("q", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("r") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("r", track) != -1) { 
+					keyword = keyword + "r"; 
+					track = inputKeyword.indexOf("r", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("s") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("s", track) != -1) { 
+					keyword = keyword + "s"; 
+					track = inputKeyword.indexOf("s", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("t") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("t", track) != -1) { 
+					keyword = keyword + "t"; 
+					track = inputKeyword.indexOf("t", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} if (inputKeyword.contains("u") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("u", track) != -1) { 
+					keyword = keyword + "u"; 
+					track = inputKeyword.indexOf("u", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			} 
+		} 
+		if (inputKeyword.contains("v") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("v", track) != -1) { 
+					keyword = keyword + "v"; 
+					track = inputKeyword.indexOf("v", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("w") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("w", track) != -1) { 
+					keyword = keyword + "w"; 
+					track = inputKeyword.indexOf("w", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("x") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("x", track) != -1) { 
+					keyword = keyword + "x"; 
+					track = inputKeyword.indexOf("x", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("y") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("y", track) != -1) { 
+					keyword = keyword + "y"; 
+					track = inputKeyword.indexOf("y", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		if (inputKeyword.contains("z") == true) { 
+			boolean valid1 = false; 
+			int track = 0; 
+			while (valid1 == false) { 
+				if (inputKeyword.indexOf("z", track) != -1) { 
+					keyword = keyword + "z"; 
+					track = inputKeyword.indexOf("z", track) + 1; 
+				} else { 
+					valid1 = true; 
+				} 
+			}
+		} 
+		return keyword;
+	}
+	public static String[][] polybius(String[][] array) { 
+			// allow user to input their own random square 
+		String input = "";
+		boolean check = false; 
+		while (check == false) { 
+			input = JOptionPane.showInputDialog(null,"Please enter your polybius square line by line from left to right (as one string)"); 
+			input = input.toLowerCase(); 
+			if (input.length() == 25 && input.contains("a") == true && input.contains("b") == true && input.contains("c") == true && input.contains("d") == true && input.contains("e") == true && input.contains("f") == true && input.contains("g") == true && input.contains("h") == true && input.contains("i") == true && input.contains("k") == true && input.contains("l") == true && input.contains("m") == true && input.contains("n") == true && input.contains("o") == true && input.contains("p") == true && input.contains("q") == true && input.contains("r") == true && input.contains("s") == true && input.contains("t") == true && input.contains("u") == true && input.contains("v") == true && input.contains("w") == true && input.contains("x") == true && input.contains("y") == true && input.contains("z") == true) { 
+				int x = 0; 
+				for (int i = 0; i < 5; i++) { 
+					for (int y = 0; y < 5; y++) { 
+						array[i][y] = input.substring(x, x + 1); 
+						x++; 
+					}   
+			    } 
+				check = true; 
+			} else { 
+				System.out.println("Please enter the letters together in a block of 25 and omit the letter j ! "); 
+			}
+		} 
+		// show square  
+		System.out.println("The following is your unique Polybius Square:"); 
+		System.out.println("  A D F G X");
+		System.out.println("A " + array[0][0] + " " + array[0][1] + " " + array[0][2] + " " + array[0][3] + " " + array[0][4]);
+		System.out.println("D " + array[1][0] + " " + array[1][1] + " " + array[1][2] + " " + array[1][3] + " " + array[1][4]);
+		System.out.println("F " + array[2][0] + " " + array[2][1] + " " + array[2][2] + " " + array[2][3] + " " + array[2][4]);
+		System.out.println("G " + array[3][0] + " " + array[3][1] + " " + array[3][2] + " " + array[3][3] + " " + array[3][4]);
+		System.out.println("X " + array[4][0] + " " + array[4][1] + " " + array[4][2] + " " + array[4][3] + " " + array[4][4]);
+		return array;
+	}
 	public static void main(String[] args) { 
 		String input = ""; 
 		String inputKeyword = ""; 
 		boolean valid = false; 
-		// check key word length 
+		// validation mechanism for key word 
 		while (valid == false) { 
-			inputKeyword = JOptionPane.showInputDialog(null,"Please enter your keyword");  
-			inputKeyword.trim(); 
-			if (inputKeyword.contains(" ") == false) { 
-				valid = true; 
-			} else { 
-				System.out.println("The key word cannot contain any spaces ! "); 
-			} 
+			inputKeyword = JOptionPane.showInputDialog(null,"Please enter your keyword"); 
+			inputKeyword = inputKeyword.trim(); 
+			inputKeyword = inputKeyword.toLowerCase();
+			valid = true;
+			if (inputKeyword.contains(" ") == true) { 
+				valid = false;
+				System.out.println("The key word cannot contain any spaces!");
+			} else if (inputKeyword.matches(".*[0-9].*") == true) {
+				valid = false;
+				System.out.println("The key word cannot contain any numbers!");
+			} else if (inputKeyword.matches("[a-zA-Z0-9 ]*") == false) {
+				valid = false;
+				System.out.println("The key word cannot contain any special characters!");
+			} else if (inputKeyword.length() < 1) { 
+				valid = false;
+			}
 		} 
 		inputKeyword = inputKeyword.toLowerCase(); 
-		// check text length 
+		// validation mechanism for text 
 		String inputText = ""; 
 		valid = false; 
 		while (valid == false) { 
-			inputText = JOptionPane.showInputDialog(null,"Please enter the text that you wish to decipher"); 
-			inputText.trim(); 
-			if (inputText.length() > 2) { 
-				valid = true; 
-			} else { 
-				System.out.println("The length of the text must be 3 or greater ! "); 
-			} 
+			inputText = JOptionPane.showInputDialog(null,"Please enter the text that you wish to encipher");
+			inputText = inputText.trim(); 
+			valid = true;
+			if (inputText.length() < 1) { 
+				valid = false;
+			} else if (inputText.matches(".*[0-9].*") == true) {
+				valid = false;
+				System.out.println("The text cannot contain any numbers!");
+			} else if (inputText.matches("[a-zA-Z0-9 ]*") == false) {
+				valid = false;
+				System.out.println("The text cannot contain any special characters!");
+			}
 		} 
 		inputText = inputText + " "; 
 		String keyword = ""; 
-		// alphabetically order the key word 
-				if (inputKeyword.contains("a") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("a", track) != -1) { 
-							keyword = keyword + "a"; 
-							track = inputKeyword.indexOf("a", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("b") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("b", track) != -1) { 
-							keyword = keyword + "b"; 
-							track = inputKeyword.indexOf("b", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("c") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("c", track) != -1) { 
-							keyword = keyword + "c"; 
-							track = inputKeyword.indexOf("c", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("d") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("d", track) != -1) { 
-							keyword = keyword + "d"; 
-							track = inputKeyword.indexOf("d", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("e") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("e", track) != -1) { 
-							keyword = keyword + "e"; 
-							track = inputKeyword.indexOf("e", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("f") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("f", track) != -1) { 
-							keyword = keyword + "f"; 
-							track = inputKeyword.indexOf("f", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("g") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("g", track) != -1) { 
-							keyword = keyword + "g"; 
-							track = inputKeyword.indexOf("g", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("h") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("h", track) != -1) { 
-							keyword = keyword + "h"; 
-							track = inputKeyword.indexOf("h", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("i") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("i", track) != -1) { 
-							keyword = keyword + "i"; 
-							track = inputKeyword.indexOf("i", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("j") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("j", track) != -1) { 
-							keyword = keyword + "j"; 
-							track = inputKeyword.indexOf("j", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("k") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("k", track) != -1) { 
-							keyword = keyword + "k"; ; 
-							track = inputKeyword.indexOf("k", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("l") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("l", track) != -1) { 
-							keyword = keyword + "l"; 
-							track = inputKeyword.indexOf("l", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("m") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("m", track) != -1) { 
-							keyword = keyword + "m"; 
-							track = inputKeyword.indexOf("m", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("n") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("n", track) != -1) { 
-							keyword = keyword + "n"; 
-							track = inputKeyword.indexOf("n", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("o") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("o", track) != -1) { 
-							keyword = keyword + "o"; 
-							track = inputKeyword.indexOf("o", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("p") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("p", track) != -1) { 
-							keyword = keyword + "p"; 
-							track = inputKeyword.indexOf("p", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("q") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("q", track) != -1) { 
-							keyword = keyword + "q"; 
-							track = inputKeyword.indexOf("q", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("r") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("r", track) != -1) { 
-							keyword = keyword + "r"; 
-							track = inputKeyword.indexOf("r", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("s") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("s", track) != -1) { 
-							keyword = keyword + "s"; 
-							track = inputKeyword.indexOf("s", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("t") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("t", track) != -1) { 
-							keyword = keyword + "t"; 
-							track = inputKeyword.indexOf("t", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} if (inputKeyword.contains("u") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("u", track) != -1) { 
-							keyword = keyword + "u"; 
-							track = inputKeyword.indexOf("u", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					} 
-				} 
-				if (inputKeyword.contains("v") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("v", track) != -1) { 
-							keyword = keyword + "v"; 
-							track = inputKeyword.indexOf("v", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("w") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("w", track) != -1) { 
-							keyword = keyword + "w"; 
-							track = inputKeyword.indexOf("w", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("x") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("x", track) != -1) { 
-							keyword = keyword + "x"; 
-							track = inputKeyword.indexOf("x", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("y") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("y", track) != -1) { 
-							keyword = keyword + "y"; 
-							track = inputKeyword.indexOf("y", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				} 
-				if (inputKeyword.contains("z") == true) { 
-					boolean valid1 = false; 
-					int track = 0; 
-					while (valid1 == false) { 
-						if (inputKeyword.indexOf("z", track) != -1) { 
-							keyword = keyword + "z"; 
-							track = inputKeyword.indexOf("z", track) + 1; 
-						} else { 
-							valid1 = true; 
-						} 
-					}
-				}                  
+		// alphabetically order key word 
+		keyword = order(inputKeyword, keyword);
+		// order the ciphertext into each column of the key word 
 		int dimension = 0;  
 		if (inputText.length()%inputKeyword.length() != 0) { 
 			dimension = (int)Math.floor((inputText.length()/inputKeyword.length())) + 1; 
@@ -364,7 +414,6 @@ public class ADFGX_Decode {
 				track = inputText.indexOf(" ", track + 1); 
 			}
 		} 
-		// order the ciphertext into each column of the key word 
 		end = false; 
 		String[] strings = new String[number1]; 
 		String[][] array1 = new String[dimension][inputKeyword.length()]; 
@@ -413,38 +462,14 @@ public class ADFGX_Decode {
 			} 
 		} 
 		String[][] array = new String[5][5];       
-		// initialise the array 
+		// initialise the array of the polybius square 
 		for (int i = 0; i < 5; i++) { 
 			for (int j = 0; j < 5; j++) { 
 				array[i][j] = "ex"; 
 			} 
 		} 
-			// have user enter their own polybius square 
-				boolean check = false; 
-				while (check == false) { 
-					input = JOptionPane.showInputDialog(null,"Please enter your polybius square line by line from left to right (as one string)");
-					input = input.toLowerCase(); 
-					if (input.length() == 25 && input.contains("a") == true && input.contains("b") == true && input.contains("c") == true && input.contains("d") == true && input.contains("e") == true && input.contains("f") == true && input.contains("g") == true && input.contains("h") == true && input.contains("i") == true && input.contains("k") == true && input.contains("l") == true && input.contains("m") == true && input.contains("n") == true && input.contains("o") == true && input.contains("p") == true && input.contains("q") == true && input.contains("r") == true && input.contains("s") == true && input.contains("t") == true && input.contains("u") == true && input.contains("v") == true && input.contains("w") == true && input.contains("x") == true && input.contains("y") == true && input.contains("z") == true) { 
-						int x = 0; 
-						for (int i = 0; i < 5; i++) { 
-							for (int y = 0; y < 5; y++) { 
-								array[i][y] = input.substring(x, x + 1); 
-								x++; 
-							}   
-					    } 
-						check = true; 
-					} else { 
-						System.out.println("Please enter the letters together in a block of 25,omit the letter j, and do not repeat any letters!"); 
-					}
-				} 
-		// show square ! 
-		System.out.println("The following is your unique Polybius Square : "); 
-		System.out.println("  A D F G X"); 
-		System.out.println("A " + array[0][0] + " " + array[0][1] + " " + array[0][2] + " " + array[0][3] + " " + array[0][4]);
-		System.out.println("D " + array[1][0] + " " + array[1][1] + " " + array[1][2] + " " + array[1][3] + " " + array[1][4]);
-		System.out.println("F " + array[2][0] + " " + array[2][1] + " " + array[2][2] + " " + array[2][3] + " " + array[2][4]);
-		System.out.println("G " + array[3][0] + " " + array[3][1] + " " + array[3][2] + " " + array[3][3] + " " + array[3][4]);
-		System.out.println("X " + array[4][0] + " " + array[4][1] + " " + array[4][2] + " " + array[4][3] + " " + array[4][4]); 
+		// have user enter Polybius Square 
+		array = polybius(array);
 		String output1 = ""; 
 		for (int a = 0; a < output.length(); a = a + 2) { 
 			String letter1 = output.substring(a, a + 1); 

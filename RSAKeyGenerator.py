@@ -40,7 +40,7 @@ n = (p-1)*(q-1)
 # enter the other part of the private key, e - check that it is valid!
 valid = 0
 while(valid==0):
-    e = input('Please enter a number between 1 and ' + str(n) + ' - it should be as large as possible')
+    e = input('Please enter a number between 1 and ' + str(n))
     if ((e>0) and (e<n) and gcd(e,n)==1):
         valid = 1
 print('Number accepted')
